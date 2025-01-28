@@ -46,3 +46,58 @@
   overflow-y: auto;
   background-color: var(--background-primary);
 }
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sideBar {
+    display: none; /* Oculta a barra lateral em dispositivos móveis */
+  }
+
+  .rigthBar {
+    display: none; /* Oculta a barra direita em dispositivos móveis */
+  }
+
+  .bodyContainer {
+    width: 100vw; /* Ocupa toda a largura da tela */
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .header {
+    width: 100%;
+    border-bottom: 1px var(--button-border) solid;
+    overflow: hidden;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    background-color: #0202022d;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+
+  .headerTab {
+    width: 50%; /* Divide a largura igualmente entre as abas */
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s;
+    color: var(--text-primary);
+  }
+
+  .headerTab:hover {
+    background-color: rgba(255, 255, 255, 0.179);
+    font-weight: 600;
+  }
+
+  .posts {
+    margin-top: 50px; /* Adiciona um espaço acima dos posts para não sobrepor o cabeçalho */
+  }
+}
