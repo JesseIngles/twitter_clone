@@ -1,4 +1,4 @@
-import style from "./rigth_bar.module.css";
+
 interface RigthBarProps {
   className?: string;
 }
