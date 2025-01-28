@@ -1,0 +1,96 @@
+.cardPost {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 16px;
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-top: 1px solid var(--button-border);
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.postHeaderTexts {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.profileImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.authorName {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.username {
+  color: #8899ac;
+  font-size: 14px;
+}
+
+.content {
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+.postImage {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.postMetrics {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #8899ac;
+  margin-top: 10px;
+  justify-content: space-evenly;
+}
+
+.icon {
+  font-size: 18px;
+  margin-right: 5px;
+  transition: transform 0.3s ease, color 0.2s ease;
+  cursor: pointer;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.icon:active {
+  transform: scale(0.9);
+}
+
+.liked {
+  color: #f44e6e;
+}
+.commented {
+  color: #00bcd4;
+}
+.retweeted {
+  color: #4caf50;
+}
+
+.postMetrics {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.metric {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
